@@ -131,14 +131,9 @@ $total-columns: 12 !default;
   box-sizing: $type;
 }
 
-@mixin clearfix {
-  *zoom:1;
-  &:before, &:after { content: " "; display: table; }
-  &:after { clear: both; }
-}
-
   /*
   Some basic resets, fixes and useful styles
+  This should not be here
   */
 
     *,
