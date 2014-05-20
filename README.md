@@ -14,4 +14,4 @@ All the code is in the SASS folder. User config.rb to customise your settings if
 
 ## Credits
 
-This codebase has been curated by @xavi_b, and comes from several sources. This is mostly based in @eddiemachado's Bones clever structure but there's also a little from Zurb's Foundation (the grid), and more flavours here and there.
+This codebase has been curated by @xavi_b, and comes from several sources. Mostly based in [@eddiemachado's Bones](https://github.com/eddiemachado/bones) clever structure but there's also a little from [Zurb's Foundation](https://github.com/zurb/foundation) (the grid), and some other stuff coming from here and there.
