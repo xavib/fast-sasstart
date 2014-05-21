@@ -66,7 +66,9 @@ $modules: () !default;
 // @variables
 //
 
-$row-width: rem-calc(1000) !default;
+$max-website-width: 1600;
+
+$row-width: rem-calc($max-website-width) !default;
 $column-gutter: rem-calc(30) !default;
 $total-columns: 12 !default;
 
@@ -84,11 +86,18 @@ $total-columns: 12 !default;
     }
 
     // Media Query Ranges
-    $small-range: (0em, 30em) !default;
-    $medium-range: (30.063em, 64.375em) !default;
-    $large-range: (64.483em, 77.5em) !default;
-    $xlarge-range: (77.563em, 120em) !default;
-    $xxlarge-range: (120.063em) !default;
+    // base file
+    $small-range: (0em, 30em) !default;           // < 480
+    // 481up file
+    $medium-range: (30.063em, 47.938em) !default; // 481 -> 767
+    // 768up file
+    $large-range: (48em, 64.375) !default;        // 768 -> 1029
+    // 1030up file
+    $xlarge-range: (64.375, 77.438) !default;     // 1030 -> 1239
+    // 1240up file
+    $xxlarge-range: (77.500,$row-width) !default;        // 1240 -> $max-website-width
+    // 1600up file
+    $xxxlarge-range: ($row-width + 0.063) !default;        // > $max-website-width
 
     $screen: "only screen" !default;
 
@@ -109,6 +118,9 @@ $total-columns: 12 !default;
 
     $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})" !default;
     $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})" !default;
+
+    $xxxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxxlarge-range)})" !default;
+    $xxxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxxlarge-range)}) and (max-width:#{upper-bound($xxxlarge-range)})" !default;
 
 //
 // Grid Functions

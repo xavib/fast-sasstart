@@ -51,6 +51,7 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 // Module Definition
 
 
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -110,6 +111,18 @@ This is for the larger monitors and possibly full screen viewers.
 	@import "breakpoints/1240up";
 
 } // end of media query
+
+/*********************
+SUPER EXTRA LARGE MONITOR
+27 inches and all that jazz
+*********************/
+@media only screen and (min-width: 1600px) {
+
+	// styles in 1600up.scss
+	@import "breakpoints/1600up";
+
+} // end of media query
+
 
 /*********************
 RETINA (2x RESOLUTION DEVICES)
