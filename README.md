@@ -12,6 +12,8 @@ or
 
 All the code is in the SASS folder. User config.rb to customise your settings if you will run **compass watch** (defaults to /stylesheets) or just run **sass --watch sass:[your css folder]** if you don't want the compass thing.
 
+_In a Rails app you don't need compass, with the common sass-rails gem you are there. Just put this into the assets folder and call main.scss from your application.css file._
+
 ## The breakpoints
 
 The grid has 4 breakpoints:
