@@ -91,11 +91,11 @@ $total-columns: 12 !default;
     // 481up file
     $medium-range: (30.063em, 47.938em) !default; // 481 -> 767
     // 768up file
-    $large-range: (48em, 64.375) !default;        // 768 -> 1029
+    $large-range: (48em, 64.313em) !default;        // 768 -> 1029
     // 1030up file
-    $xlarge-range: (64.375, 77.438) !default;     // 1030 -> 1239
+    $xlarge-range: (64.375em, 77.438em) !default;     // 1030 -> 1239
     // 1240up file
-    $xxlarge-range: (77.500,$row-width) !default;        // 1240 -> $max-website-width
+    $xxlarge-range: (77.500em,$row-width) !default;        // 1240 -> $max-website-width
     // 1600up file
     $xxxlarge-range: ($row-width + 0.063) !default;        // > $max-website-width
 
@@ -369,6 +369,43 @@ $total-columns: 12 !default;
     }
     @media #{$large-up} {
       @include grid-html-classes($size:large);
+      @for $i from 1 through $total-columns - 1 {
+        .push#{-$i} {
+          @include grid-column($push:$i, $collapse:null, $float:false);
+        }
+        .pull#{-$i} {
+          @include grid-column($pull:$i, $collapse:null, $float:false);
+        }
+      }
+    }
+
+    @media #{$xlarge-up} {
+      @include grid-html-classes($size:xlarge);
+      @for $i from 1 through $total-columns - 1 {
+        .push#{-$i} {
+          @include grid-column($push:$i, $collapse:null, $float:false);
+        }
+        .pull#{-$i} {
+          @include grid-column($pull:$i, $collapse:null, $float:false);
+        }
+      }
+    }
+
+    @media #{$xxlarge-up} {
+
+      @include grid-html-classes($size:xxlarge);
+      @for $i from 1 through $total-columns - 1 {
+        .push#{-$i} {
+          @include grid-column($push:$i, $collapse:null, $float:false);
+        }
+        .pull#{-$i} {
+          @include grid-column($pull:$i, $collapse:null, $float:false);
+        }
+      }
+    }
+
+    @media #{$xxxlarge-up} {
+      @include grid-html-classes($size:xxxlarge);
       @for $i from 1 through $total-columns - 1 {
         .push#{-$i} {
           @include grid-column($push:$i, $collapse:null, $float:false);
