@@ -28,4 +28,4 @@ You can change the largest breakpoint easily in a variable called *$max-website-
 
 ## Credits
 
-This codebase has been curated by [https://github.com/xavib/](@xavi_b), and comes from several sources. Mostly based in [@eddiemachado's Bones](https://github.com/eddiemachado/bones) clever structure but there's also a little from [Zurb's Foundation](https://github.com/zurb/foundation) (the grid), and some other stuff coming from here and there.
+This codebase has been curated by [@xavi_b](https://github.com/xavib/), and comes from several sources. Mostly based in [@eddiemachado's Bones](https://github.com/eddiemachado/bones) clever structure but there's also a little from [Zurb's Foundation](https://github.com/zurb/foundation) (the grid), and some other stuff coming from here and there.
