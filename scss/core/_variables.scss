@@ -1,0 +1,39 @@
+/**
+    General variables
+**/
+
+$border-radius:.3em;
+$desktop-breakpoint: 64em;
+$tablet-breakpoint: 48em;
+$gutter-base:2em;
+$box-shadow:0 0 1px rgba(0,0,0,.3);
+
+/**
+    Fonts (use @import and @font-face directives here!)
+    Here a couple of samples:
+
+    @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+
+    @font-face {
+        font-family: 'montreal_serialbold';
+        src: url('fonts/Montreal_Serial-Bold-webfont.eot');
+        src: url('fonts/Montreal_Serial-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/Montreal_Serial-Bold-webfont.woff2') format('woff2'),
+             url('fonts/Montreal_Serial-Bold-webfont.woff') format('woff'),
+             url('fonts/Montreal_Serial-Bold-webfont.ttf') format('truetype'),
+             url('fonts/Montreal_Serial-Bold-webfont.svg#montreal_serialbold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+**/
+
+$font-base: Times, serif;
+$font-headlines: Helvetica, sans-serif;
+
+// Colors
+
+$color-link: #F96110;
+$color-text: #333333;
+$color-light: lighten($color-text,30%);

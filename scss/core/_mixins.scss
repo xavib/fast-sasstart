@@ -1,0 +1,47 @@
+@mixin old-clearfix {
+  &:before,
+  &:after {
+    content: "";    
+    display: block;    
+    height: 0;    
+  }
+
+  &:after { clear: both; }
+  zoom: 1; /* IE < 8 */
+}
+
+@mixin ul-reset {
+
+  list-style:none;
+  padding:0;
+  margin:0;
+    
+  li {
+    margin:0;
+    padding:0;
+  }
+}
+
+@mixin button($bg:$color-link, $color:#fff) {
+    display:inline-block;
+    padding:.5em 1em;
+    border-radius:.3em;
+    color:$color;
+    text-decoration:none;
+    font-family:$font-headlines;
+    text-transform:uppercase;
+    background:$bg;
+    font-size:.85em;
+}
+
+@mixin hyphenate {
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}

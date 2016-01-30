@@ -2,30 +2,45 @@
 
 A base set of SCSS stylesheets to start projects. No frameworks or learning curve, just a set of empty files to be customised as you need and a couple of handy mixins and functions.
 
-## How
+We work with plain HMTL, Ruby on Rails and PHP projects at @season_es, so we've been working on a (really) simple structure for all scenarios.
 
-``gem install compass``
+## Why
 
-or
+In most cases, we use compass to compile SCSS. By doing it this way, we don't need to run _anyting_ in RoR projects, we can easily fit this with [middleman](https://middlemanapp.com/) for static sites and with tiny changes we can also easily integrate it with [Grunt](http://gruntjs.com/), [Glup](http://gulpjs.com/) or whatever.
 
-``gem install sass``
 
-All the code is in the SASS folder. User config.rb to customise your settings if you will run **compass watch** (defaults to /stylesheets) or just run **sass --watch sass:[your css folder]** if you don't want the compass thing.
+## This thing at a glance
 
-_In a Rails app you don't need compass, with the common sass-rails gem you are there. Just put this into the assets folder and call main.scss from your application.css file._
+Directory         | Purpose
+----------------- | ----------------------------------------------------------------------
+`core`            | Core styles. Functions, mixins, font imports, variables...
+`base`            | Holding the collection of high-level elements
+`layout`          | Definition of the relationship between components
+`component`       | Low-level elements
+`vendor`          | Vendor files
 
-## The breakpoints
+## Some basic rules we trend to follow:
 
-The grid has 4 breakpoints:
+### Add media queries the closest to their component.
 
-- 481up
-- 768up
-- 1030up
-- 1240up
-- 1600up
+As an example, take a related news block. 4 columns and tag list in large viewports, 1 column without tag list in small viewports.
 
-You can change the largest breakpoint easily in a variable called *$max-website-width* in the ``_grid.scss`` file. Well, you can do whatever you want ^__^
+You would add the media query to show/hide the tag list in a file called ``component/_news--item.scss``
+
+You would add the media query to fit the number of columns in a ``layout/_news--related.scss`` file.
+
+
+## How (do we proceed)
+
+Dependencies are managed via bundler. If you don't have it, run 
+
+``gem install bundler``
+
+Our common flow for starting a project is:
+
+``bundle install``
+``bundle exec compass watch``
 
 ## Credits
 
-This codebase has been curated by [@xavi_b](https://github.com/xavib/), and comes from several sources. Mostly based in [@eddiemachado's Bones](https://github.com/eddiemachado/bones) clever structure but there's also a little from [Zurb's Foundation](https://github.com/zurb/foundation) (the grid), and some other stuff coming from here and there.
+This codebase has been baked by [@xavi_b](https://github.com/xavib/) and is inspired by a bunch of lectures and conversations about structures.
