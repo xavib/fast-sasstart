@@ -2,7 +2,7 @@
 
 A base set of SCSS stylesheets to start projects. No frameworks or learning curve, just a set of empty files to be customised as you need and a couple of handy mixins and functions.
 
-We work with plain HMTL, Ruby on Rails and PHP projects at @season_es, so we've been working on a (really) simple structure for all scenarios.
+We work with plain HMTL, Ruby on Rails and PHP projects at [season](http://www.season.es), so we've been working on a (really) simple structure for all scenarios.
 
 ## Why
 
