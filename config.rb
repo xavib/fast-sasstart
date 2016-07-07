@@ -1,17 +1,9 @@
 # Require any additional compass plugins here.
 
-# http://www.rubydoc.info/gems/compass-import-once/
 require 'compass/import-once/activate'
-
-#https://github.com/chriseppstein/sass-globbing
 require 'sass-globbing'
-
-#http://susy.oddbird.net/
 require 'susy'
-
-#http://breakpoint-sass.com/
 require 'breakpoint' 
-
 
 # Set this to the root of your project when deployed:
 http_path = "/"
