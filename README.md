@@ -6,7 +6,11 @@ We work with plain HMTL, Ruby on Rails and PHP projects at [season](http://www.s
 
 ## Why
 
-In most cases, we use compass to compile SCSS. By doing it this way, we don't need to run _anyting_ in RoR projects, we can easily fit this with [middleman](https://middlemanapp.com/) for static sites and with tiny changes we can also easily integrate it with [Grunt](http://gruntjs.com/), [Glup](http://gulpjs.com/) or whatever.
+We keep this stuff isolated so we can integrate it in any project. By doing it this way, we can easily fit this with [middleman](https://middlemanapp.com/) for static sites and easily integrate it with [Grunt](http://gruntjs.com/), [Glup](http://gulpjs.com/) or whatever.
+
+This is not a framework, but just a structure to start hacking styles with no dependencies at all.
+
+Feel free to add any automation layer over this.
 
 
 ## This thing at a glance
@@ -17,7 +21,8 @@ Directory         | Purpose
 `base`            | Holding the collection of high-level elements
 `layout`          | Definition of the relationship between components
 `component`       | Low-level elements
-`vendor`          | Vendor files
+`elements`        | Low-level elements
+`vendor`          | Vendor files, if not managed with automation tools
 
 ## Some basic rules we trend to follow:
 
