@@ -33,15 +33,3 @@
     background:$bg;
     font-size:.85em;
 }
-
-@mixin hyphenate {
- -ms-word-break: break-all;
-     word-break: break-all;
-
-     // Non standard for webkit
-     word-break: break-word;
-
--webkit-hyphens: auto;
-   -moz-hyphens: auto;
-        hyphens: auto;
-}

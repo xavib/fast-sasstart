@@ -5,9 +5,9 @@
 */
 
 body {
-  font-size:1em;
+  font-size:$font-size;
   font-family:$font-base;
-  line-height:1.4em;
+  line-height:$font-size*1.4;
   -webkit-font-smoothing: antialiased;
   color:$color-text;
 }
@@ -50,8 +50,4 @@ h5 {
 
 h6 {
   font-size:1em;
-}
-
-@media only screen and (min-width:$desktop-breakpoint) {
-
 }
