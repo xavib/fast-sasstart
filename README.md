@@ -30,17 +30,6 @@ You would add the media query to show/hide the tag list in a file called ``compo
 You would add the media query to fit the number of columns in a ``layout/_news--related.scss`` file.
 
 
-## How (do we proceed)
-
-Dependencies are managed via bundler. If you don't have it, run 
-
-``gem install bundler``
-
-Our common flow for starting a project is:
-
-``bundle install``
-``bundle exec compass watch``
-
 ## Credits
 
 This codebase has been baked by [@xavi_b](https://github.com/xavib/) and is inspired by a bunch of lectures and conversations about structures.
